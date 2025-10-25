@@ -30,6 +30,8 @@ import '@ionic/react/css/display.css';
 /* import '@ionic/react/css/palettes/dark.class.css'; */
 import '@ionic/react/css/palettes/dark.system.css';
 
+import Scan from "./pages/Scan";
+
 /* Theme variables */
 import './theme/variables.css';
 
@@ -39,11 +41,9 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
+        <Route path="/scan" component={Scan} exact />
         <Route exact path="/">
-          <Redirect to="/home" />
+          <Redirect to="/scan" />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>
