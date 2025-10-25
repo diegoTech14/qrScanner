@@ -1,0 +1,7 @@
+{
+  "name": "qrscan",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
